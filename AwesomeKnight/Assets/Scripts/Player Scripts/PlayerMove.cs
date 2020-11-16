@@ -115,4 +115,29 @@ public class PlayerMove : MonoBehaviour
             animator.SetFloat("Walk", 0f);
         }
     }
+
+    public bool finishedMovement
+    {
+        get
+        {
+            return finished_Movement;
+        }
+        set
+        {
+            finished_Movement = value;
+        }
+    }
+
+    public Vector3 targetPosition
+    {
+
+        get
+        {
+            return target_Position;
+        }
+        set
+        {
+            target_Position = value;
+        }
+    }
 }
