@@ -115,6 +115,9 @@ public class PlayerAttack : MonoBehaviour
         else
         {
             animator.SetInteger("Atk", 0);
+            canAttack = false;
+            playerMove.finishedMovement = false;
+
         }
 
         // rotating the player by pressing the space toward the mouse
